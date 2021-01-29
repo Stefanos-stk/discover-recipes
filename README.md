@@ -2,6 +2,8 @@
 
 Using [Spoonacular API](https://spoonacular.com/) to search for recipes based on user input from a dropdown list.
 
+Link to application [link](https://discover-recipes.herokuapp.com/)
+
 ## Tools
 
 - Python
