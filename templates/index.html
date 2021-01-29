@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Discover Recipes</title>
+  </head>
+  <body>
+    <form method="POST" action="/">
+      <select
+        multiple
+        id="multiselect"
+        name="ingredients"
+        method="GET"
+        action="/"
+        size="30"
+        style="height: 100%"
+      >
+        {% for ingr in ingredients %}
+        <option type="checkbox" value="{{ingr}}" selected>{{ingr}}</option>
+        " {% endfor %}
+        <input
+          type="submit"
+          class="float-left submit-button"
+          value="Show Recipes"
+        />
+      </select>
+    </form>
+  </body>
+</html>
