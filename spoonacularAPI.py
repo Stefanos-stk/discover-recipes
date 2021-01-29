@@ -5,9 +5,12 @@ import os
 
 
 class Spoonacular(object):
+    '''
     env_path = Path('.') / '.env'
     load_dotenv(dotenv_path=env_path)
     api_key = os.getenv('API_KEY')
+    '''
+    api_key = os.environ.get('API_KEY')
 
     def __init__(self, api_key=api_key, *args, **kwargs):
         super().__init__(*args, **kwargs)
